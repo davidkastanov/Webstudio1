@@ -638,7 +638,7 @@ img {
 }
 
 .hero-btns_:hover, .hero-btns_:focus {
-  color: var(--logo-color);
+  color: var(--main-bcg-color);
   text-align: center;
   font-size: 16px;
   font-weight: 500;
@@ -650,7 +650,7 @@ img {
 }
 
 .hero-btns_ {
-  color: var(--logo-color);
+  color: var(--text-color);
   text-align: center;
   font-size: 16px;
   font-weight: 500;
