@@ -7,6 +7,7 @@
   --team-background-color: #F5F4FA;
   --footer-number:rgba(255, 255, 255, 0.60);
   --footer-bcg-color: #2F303A;
+  --barder-line: #ECECEC;
 }
 
 
@@ -76,22 +77,15 @@ img {
   position: relative;
 }
 
-.nav-link_ {
-  color: var(--accent-color);
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.28px;
-  transition: 0.2s cubic-bezier(0.39, 0.575, 0.565, 1);
-}
+
 .nav-link {
-  color: var(--logo-color);
+  color: var(--text-color);
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.28px;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  z-index: 10;
+ 
 }
 
 
@@ -142,7 +136,7 @@ img {
 .roster-link {
   display: flex;
   gap: 10px;
-  color: var(--footer-bcg-color);
+  color: var(--footer-text-color);
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
@@ -157,7 +151,7 @@ img {
   height: 12px;
   margin-top: auto;
   margin-bottom: auto;
-  fill: var(--footer-bcg-color);
+  fill: var(--footer-text-color);
 }
 
 
@@ -633,6 +627,7 @@ img {
 .hiro {
   padding-top: 94px;
   padding-bottom: 50px;
+  border-top: 1px solid var(--barder-line);
 }
 
 .hero-btns {
