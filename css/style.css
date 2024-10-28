@@ -667,54 +667,45 @@ img {
   transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
-.hero-list {
+.goods-items {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 
-.hero-item {
+.goods-item {
   flex-basis: calc((100% - 60px) / 3);
-  transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
   position: relative;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-box {
-  border: 1px solid var(--team-background-color);
-  border-top: none;
-  width: 370px;
-  padding-right: 24px;
-  padding-left: 24px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+.goods-item:hover,.goods-item:focus{
+  .goods-opacity{
+      opacity: 1;
+  }
 }
 
-.hero-item:hover, .hero-item:focus {
-  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+/* З цим фокусом допоміг ChatGPT */
+
+.goods-item:hover, .goods-item:focus-within {
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 
+              0px 4px 4px rgba(0, 0, 0, 0.06), 
+              1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.hero-caption {
-  color: var(--logo-color);
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.88; /* 187.5% */
-  letter-spacing: 0.48px;
-  margin-bottom: 4px;
+.goods-item:focus-within .goods-opacity {
+  opacity: 1;
 }
 
-.hero-text {
-  color: var(--footer-text-color);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.88; /* 187.5% */
-  letter-spacing: 0.48px;
+.goods-link:focus {
+  outline: none;
 }
 
-.hero-img {
+.goods-img {
   width: 100%;
 }
 
-.hero-opaciti {
+.goods-opacity {
   background: rgba(33, 150, 243, 0.90);
   position: absolute;
   padding: 63px 24px;
@@ -724,13 +715,41 @@ img {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.opaciti-text {
+.goods-opacity-text {
   color: var(--main-bcg-color);
   font-size: 18px;
   font-weight: 400;
   line-height: 1.56;
   letter-spacing: 0.54px;
 }
+
+.goods-box {
+  border: 1px solid var(--team-background-color);
+  border-top: none;
+  width: 370px;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.goods-caption {
+  color: var(--logo-color);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.48px;
+  margin-bottom: 4px;
+}
+
+.goods-text {
+  color: var(--footer-text-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.88;
+  letter-spacing: 0.48px;
+}
+
 .mailing {
   margin-top: 12px;
   margin-left: 93px;
