@@ -8,6 +8,7 @@
   --footer-number:rgba(255, 255, 255, 0.60);
   --footer-bcg-color: #2F303A;
   --barder-line: #ECECEC;
+  --svg-color: #AFB1B8;
 }
 
 
@@ -440,7 +441,7 @@ img {
   font-weight: 500;
   line-height: 1.19;
   letter-spacing: 0.48px;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .team-text {
@@ -465,7 +466,7 @@ img {
   display: flex;
   align-items: center;
   padding: 12px 12px 12px 12px;
-  background-color: var(--main-bcg-color);
+  background-color: var(--main-bcg-colorr);
   border-radius: 50%;
   transition: 1s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
@@ -482,7 +483,7 @@ img {
 .team-element-img {
   width: 20px;
   height: 20px;
-  fill: var(--footer-text-color);
+  fill: var(--svg-color);
   transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
@@ -511,10 +512,10 @@ img {
   align-items: center;
   justify-content: center;
   border-radius: 4px;
-  border: 1px solid var(--footer-text-color);
+  border: 1px solid var(--svg-color);
   width: 170px;
   height: 92px;
-  fill: var(--footer-text-color);
+  fill: var(--svg-color);
   transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
@@ -537,6 +538,9 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.footer-container{
+  align-items: baseline
+}
 
 .footer > .container {
   display: flex;
@@ -549,6 +553,8 @@ img {
   font-weight: 400;
   line-height: 1.69; /* 171.429% */
   letter-spacing: 0.42px;
+  margin-right: 70px;
+  
 }
 
 .footer-items {
@@ -590,9 +596,6 @@ img {
   letter-spacing: 0.78px;
 }
 
-.footer-networks {
-  padding-top: 12px;
-}
 
 .footer-title {
   color: var(--main-bcg-color);
@@ -695,7 +698,6 @@ img {
   }
 }
 
-/* З цим фокусом допоміг ChatGPT */
 
 .goods-item:hover, .goods-item:focus-within {
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 
@@ -761,10 +763,7 @@ img {
   letter-spacing: 0.48px;
 }
 
-.mailing {
-  margin-top: 12px;
-  margin-left: 93px;
-}
+
 
 .mailing-form {
   display: flex;
