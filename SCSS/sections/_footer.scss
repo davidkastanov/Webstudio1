@@ -1,5 +1,5 @@
 .footer {
-    background-color: var(--footer-bcg-color);
+    background-color: $footer-bcg-color;
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -13,7 +13,7 @@
   }
   
   .footer-address {
-    color: var(--main-bcg-color);
+    color: $main-bcg-color;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.69; /* 171.429% */
@@ -36,7 +36,7 @@
   }
   
   .footer-link {
-    color: var(--footer-text-color);
+    color: $footer-text-color;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.71; /* 171.429% */
@@ -44,7 +44,7 @@
   }
   
   .logo-footer1 {
-    color: var(--accent-color);
+    color: $accent-color;
     font-family: Raleway;
     font-size: 26px;
     font-weight: 700;
@@ -53,7 +53,7 @@
   }
   
   .logo-footer2 {
-    color: var(--main-bcg-color);
+    color: $main-bcg-color;
     font-family: Raleway;
     font-size: 26px;
     font-weight: 700;
@@ -63,7 +63,7 @@
   
   
   .footer-title {
-    color: var(--main-bcg-color);
+    color: $main-bcg-color;
     font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
@@ -81,27 +81,27 @@
     display: flex;
     align-items: center;
     padding: 12px 12px 12px 12px;
-    background-color: var(--footer-text-color);
+    background-color: $footer-text-color;
     border-radius: 50%;
     transition: 1s cubic-bezier(0.39, 0.575, 0.565, 1);
   }
   
   .footer-element-link:hover, .footer-element-link:focus {
-    background-color: var(--accent-color);
+    background-color: $accent-color;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   .footer-element-img {
     width: 20px;
     height: 20px;
-    fill: var(--main-bcg-color);
+    fill: $main-bcg-color;
   }
   .mailing-form {
     display: flex;
   }
   
   .mailing-signature {
-    color: var(--main-bcg-color);
+    color: $main-bcg-color;
     font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
@@ -133,13 +133,13 @@
     align-items: center;
     width: 200px;
     height: 50px;
-    color: var(--main-bcg-color);
+    color: $main-bcg-color;
     font-size: 16px;
     font-weight: 700;
     line-height: 1.88;
     letter-spacing: 0.96px;
     border-radius: 4px;
-    background: var(--accent-color);
+    background: $accent-color;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     border: none;
     margin-top: 36px;
@@ -148,13 +148,13 @@
   
   .mailing-btn:hover, .mailing-btn:focus {
     outline: none;
-    background-color: var(--clients-border);
-    color: var(--main-bcg-color);
+    background-color: $clients-border;
+    color: $main-bcg-color;
     cursor: pointer;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     .mailing-img{
       transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        fill: var(--main-bcg-color);
+        fill: $main-bcg-color;
     }
   }
   
@@ -162,6 +162,6 @@
     margin-left: 10px;
     width: 24px;
     height: 24px;
-    fill: var(--main-bcg-color);
+    fill: $main-bcg-color;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }

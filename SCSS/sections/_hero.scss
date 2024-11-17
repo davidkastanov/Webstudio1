@@ -10,7 +10,7 @@
   
   .hero-title {
     width: 696px;
-    color: var(--main-bcg-color);
+    color: $main-bcg-color;
     text-align: center;
     font-size: 44px;
     font-weight: 900;
@@ -23,13 +23,13 @@
   }
   
   .decision-btn {
-    color: var(--main-bcg-color);
+    color: $main-bcg-color;
     font-size: 16px;
     font-weight: 700;
     line-height: 1.88; /* 187.5% */
     letter-spacing: 0.96px;   
     border-radius: 4px;
-    background: var(--accent-color);
+    background: $accent-color;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     padding-top: 10px;
     padding-bottom: 10px;
@@ -41,6 +41,6 @@
   }
   
   .decision-btn:hover, .decision-btn:focus {
-    background-color: var(--footer-bcg-color);
-    color: var(--main-bcg-color);
+    background-color: $footer-bcg-color;
+    color: $main-bcg-color;
   }
