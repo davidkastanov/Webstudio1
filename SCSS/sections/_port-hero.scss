@@ -1,17 +1,17 @@
-.hiro {
+.goods {
     padding-top: 94px;
     padding-bottom: 50px;
     border-top: 1px solid $barder-line;
   }
   
-  .hero-btns {
+  .goods__btns {
     display: flex;
     justify-content: center;
     gap: 8px;
     margin-bottom: 50px;
   }
   
-  .hero-btns_:hover, .hero-btns_:focus {
+  .goods__btns_:hover, .goods__btns_:focus {
     color: $main-bcg-color;
     text-align: center;
     font-size: 16px;
@@ -24,7 +24,7 @@
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  .hero-btns_ {
+  .goods__btns_ {
     color: $text-color;
     text-align: center;
     font-size: 16px;
@@ -42,49 +42,49 @@
     transition: 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
   }
   
-  .goods-items {
+  .goods__items {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
   }
   
-  .goods-item {
+  .goods__item {
     flex-basis: calc((100% - 60px) / 3);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  .goods-item:hover,.goods-item:focus{
-    .goods-opacity{
+  .goods__item:hover,.goods__item:focus{
+    .goods__opacity{
         opacity: 1;
         transform: translateY(-294px);
     }
   }
   
   
-  .goods-item:hover, .goods-item:focus-within {
+  .goods__item:hover, .goods__item:focus-within {
     box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 
                 0px 4px 4px rgba(0, 0, 0, 0.06), 
                 1px 4px 6px rgba(0, 0, 0, 0.16);
   }
   
-  .goods-item:focus-within .goods-opacity {
+  .goods__item:focus-within .goods__opacity {
     opacity: 1;
   }
   
-  .goods-link:focus {
+  .goods__link:focus {
     outline: none;
   }
   
-  .goods-wrraper {
+  .goods__wrraper {
     position: relative;
     overflow: hidden;
   }
   
-  .goods-img {
+  .goods__img {
     width: 100%;
   }
   
-  .goods-opacity {
+  .goods__opacity {
     background: rgba(33, 150, 243, 0.90);
     position: absolute;
     padding: 63px 24px;
@@ -95,7 +95,7 @@
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
-  .goods-opacity-text {
+  .goods__opacity__text {
     color: $main-bcg-color;
     font-size: 18px;
     font-weight: 400;
@@ -103,7 +103,7 @@
     letter-spacing: 0.54px;
   }
   
-  .goods-box {
+  .goods__box {
     border: 1px solid $barder-line;
     border-top: none;
     width: 370px;
@@ -113,7 +113,7 @@
     padding-bottom: 20px;
   }
   
-  .goods-caption {
+  .goods__caption {
     color: $logo-color;
     font-size: 16px;
     font-weight: 700;
@@ -122,7 +122,7 @@
     margin-bottom: 4px;
   }
   
-  .goods-text {
+  .goods__text {
     color: $footer-text-color;
     font-size: 16px;
     font-weight: 400;

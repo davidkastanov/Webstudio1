@@ -2,163 +2,189 @@
     background-color: $footer-bcg-color;
     padding-top: 60px;
     padding-bottom: 60px;
+
+    &__container{
+      align-items: baseline
+    }
+
+
+    &__address {
+      color: $main-bcg-color;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.69; /* 171.429% */
+      letter-spacing: 0.42px;
+      margin-right: 70px;
+      
+    }
+
+
+    &__items {
+      margin-top: 20px;
+    }
+
+
+
+    &__item {
+      margin-bottom: 9px;
+      font-style: normal;
+    }
+    
+    &__item:last-child {
+      margin-bottom: 0px;
+    }
+    
+    &__link {
+      color: $footer-text-color;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.71; /* 171.429% */
+      letter-spacing: 0.42px;
+    }
+    
+    &__web {
+      color: $accent-color;
+      font-family: Raleway;
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 1.38;
+      letter-spacing: 0.78px;
+    }
+    
+    &__studio {
+      color: $main-bcg-color;
+      font-family: Raleway;
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 1.38;
+      letter-spacing: 0.78px;
+    }
+    
+    
+    &__title {
+      color: $main-bcg-color;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.14;
+      letter-spacing: 0.42px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    
+    &__list {
+      display: flex;
+      gap: 10px;
+    }
+    
+    &__element__link {
+      display: flex;
+      align-items: center;
+      padding: 12px 12px 12px 12px;
+      background-color: $footer-text-color;
+      border-radius: 50%;
+      transition: 1s cubic-bezier(0.39, 0.575, 0.565, 1);
+
+      &:hover, &:focus {
+        background-color: $accent-color;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    }
+
+
+    &__element__img {
+      width: 20px;
+      height: 20px;
+      fill: $main-bcg-color;
+    }
+
+
+    &__mailing__signature {
+      color: $main-bcg-color;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.14;
+      letter-spacing: 0.42px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      display: block;
+    }
+
+    &__mailing__form {
+      display: flex;
+    }
+    
+    
+    
+    &__mailing__input {
+      width: 358px;
+      height: 50px;
+      border-radius: 4px;
+      border: 1px solid rgba(255, 255, 255, 0.30);
+      background: rgba(33, 150, 243, 0.00);
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+      padding-left: 16px;
+      margin-right: 12px;
+    }
+    
+    &__mailing__input:focus {
+      outline: none;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    &__mailing__btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 200px;
+      height: 50px;
+      color: $main-bcg-color;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 1.88;
+      letter-spacing: 0.96px;
+      border-radius: 4px;
+      background: $accent-color;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+      border: none;
+      margin-top: 36px;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover, &:focus {
+        outline: none;
+        
+        color: $main-bcg-color;
+        cursor: pointer;
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &__mailing__img{
+          transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            fill: $main-bcg-color;
+        }
+      }
+    }
+
+    
   }
-  .footer-container{
-    align-items: baseline
-  }
+  
   
   .footer > .container {
     display: flex;
     gap: 70px;
   }
   
-  .footer-address {
-    color: $main-bcg-color;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.69; /* 171.429% */
-    letter-spacing: 0.42px;
-    margin-right: 70px;
-    
-  }
-  
-  .footer-items {
-    margin-top: 20px;
-  }
-  
-  .footer-item {
-    margin-bottom: 9px;
-    font-style: normal;
-  }
-  
-  .footer-item:last-child {
-    margin-bottom: 0px;
-  }
-  
-  .footer-link {
-    color: $footer-text-color;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.71; /* 171.429% */
-    letter-spacing: 0.42px;
-  }
-  
-  .logo-footer1 {
-    color: $accent-color;
-    font-family: Raleway;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 1.38;
-    letter-spacing: 0.78px;
-  }
-  
-  .logo-footer2 {
-    color: $main-bcg-color;
-    font-family: Raleway;
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 1.38;
-    letter-spacing: 0.78px;
-  }
   
   
-  .footer-title {
-    color: $main-bcg-color;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1.14;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-  }
   
-  .footer-list {
-    display: flex;
-    gap: 10px;
-  }
   
-  .footer-element-link {
-    display: flex;
-    align-items: center;
-    padding: 12px 12px 12px 12px;
-    background-color: $footer-text-color;
-    border-radius: 50%;
-    transition: 1s cubic-bezier(0.39, 0.575, 0.565, 1);
-  }
   
-  .footer-element-link:hover, .footer-element-link:focus {
-    background-color: $accent-color;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
   
-  .footer-element-img {
-    width: 20px;
-    height: 20px;
-    fill: $main-bcg-color;
-  }
-  .mailing-form {
-    display: flex;
-  }
   
-  .mailing-signature {
-    color: $main-bcg-color;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1.14;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    display: block;
-  }
   
-  .mailing-input {
-    width: 358px;
-    height: 50px;
-    border-radius: 4px;
-    border: 1px solid rgba(255, 255, 255, 0.30);
-    background: rgba(33, 150, 243, 0.00);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    padding-left: 16px;
-    margin-right: 12px;
-  }
   
-  .mailing-input:focus {
-    outline: none;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+ 
   
-  .mailing-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    height: 50px;
-    color: $main-bcg-color;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.88;
-    letter-spacing: 0.96px;
-    border-radius: 4px;
-    background: $accent-color;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    border: none;
-    margin-top: 36px;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
   
-  .mailing-btn:hover, .mailing-btn:focus {
-    outline: none;
-    
-    color: $main-bcg-color;
-    cursor: pointer;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    .mailing-img{
-      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        fill: $main-bcg-color;
-    }
-  }
   
-  .mailing-img {
+  .footer__mailing__img {
     margin-left: 10px;
     width: 24px;
     height: 24px;
