@@ -1,19 +1,26 @@
 .team {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: $team-background-color;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 60px;
+    padding-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 94px;
+    padding-bottom: 94px;
+    }
 
     &__items {
       display: flex;
       gap: 30px;
+      flex-wrap: wrap;
     }
 
 
-    &__img {
-      width: 370px;
-      height: 294px;
-      flex-shrink: 0;
-    }
+    
 
     &__text {
       display: flex;
@@ -30,7 +37,7 @@
       text-transform: uppercase;
     }
     
-
+    
     &__title {
       color: $logo-color;
       text-align: center;
@@ -38,7 +45,11 @@
       font-weight: 700;
       line-height: 1.17;
       letter-spacing: 1.08px;
-      margin-bottom: 50px;
+      margin-bottom: 30px;
+
+      @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+      }
     }
 
 
@@ -46,6 +57,19 @@
       border-radius: 0px 0px 4px 4px;
       box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
       background-color: $main-bcg-color;
+      flex-basis: 100%;
+
+      @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 30px) / 2);
+      }
+
+      @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 90px) / 4);
+      }
+    }
+
+    &__img {
+      background-color: red;
     }
 
     &__box__item {
@@ -61,11 +85,7 @@
     }
 
 
-    &__img {
-      width: 270px;
-      height: 260px;
-      flex-shrink: 0;
-    }
+    
 
 
     &__heading {

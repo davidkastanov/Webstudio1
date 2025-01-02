@@ -1,8 +1,18 @@
 
 
   .header{
-    padding-top: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+
+    @media screen and (min-width: 768px) {
+      padding-top: 21px;
+    padding-bottom: 21px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding-top: 24px;
     padding-bottom: 25px;
+    }
 
     &__box {
       display: flex;
@@ -10,7 +20,15 @@
     }
 
     &__logo {
-      margin-right: 93px;
+      margin-right: auto;
+
+      @media screen and (min-width: 768px) {
+        margin-right: 88px;
+      }
+
+      @media screen and (min-width: 1200px) {
+        margin-right: 93px;
+      }
     }
 
     &__web {
@@ -29,6 +47,14 @@
       font-weight: 700;
       line-height: 1.38;
       letter-spacing: 0.78px;
+    }
+
+    &__nav {
+      display: none;
+
+      @media screen and (min-width: 768px) {
+        display: block;
+      }
     }
 
     &__items {
@@ -69,10 +95,23 @@
     }
 
     &__list {
-      display: flex;
-      align-items: center;
-      gap: 50px;
+      display: none;
+      
       margin-left: auto;
+
+
+      @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: start;
+      }
+
+      @media screen and (min-width: 1200px) {
+        gap: 50px;
+        flex-direction: row;
+        align-items: center;
+      }
     }
 
     &__contact {
