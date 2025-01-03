@@ -289,10 +289,10 @@ body {
 .menu__link-social {
   color: #2196F3;
   font-family: Roboto;
-  font-size: 18px;
+  font-size: 13px;
   font-style: normal;
   font-weight: 500;
-  line-height: 12px; /* 122.222% */
+  line-height: 5px; /* 122.222% */
   letter-spacing: 0.36px;
 }
 
