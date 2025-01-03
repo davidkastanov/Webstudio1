@@ -198,6 +198,7 @@ body {
   padding-top: 48px;
   padding-left: 40px;
   padding-bottom: 48px;
+  z-index: 1;
 }
 
 .header__button {
@@ -230,15 +231,69 @@ body {
   height: 20px;
 }
 
+.menu__list {
+  padding-bottom: 210px;
+}
+
 .menu__link {
   color: #000000;
-  gap: 33px;
   font-family: Roboto;
-  font-size: 20px;
+  font-size: 40px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.8px;
+}
+
+.menu__link:hover, .menu__link:focus {
+  color: #2196F3;
+  font-family: Roboto;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.8px;
+}
+
+.menu__list-contact {
+  padding-bottom: 32px;
+}
+
+.menu__contact-link {
+  color: #757575;
+  gap: 32px;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.48px;
+}
+
+.menu__contact-link:hover {
+  color: #2196F3;
+  gap: 32px;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.48px;
+}
+
+.menu__list-social {
+  display: flex;
+  gap: 20px;
+}
+
+.menu__link-social {
+  color: #2196F3;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 12px; /* 122.222% */
+  letter-spacing: 0.36px;
 }
 
 /* .header__elem:nth-child(2) > .header__contact > .header__img {
